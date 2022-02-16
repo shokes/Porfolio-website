@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  /* position: fixed; */
+  background-color: #fff;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  color: #555;
+  font-weight: 400;
+  font-size: 1.8rem;
+
+  font-family: "Lora", serif;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: translatex(100%);
+  transition: all 0.5s ease-in;
+  background-color: #20b2aa;
+  opacity: 0;
+
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.nav-open .nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+.main-nav-lists {
+  display: flex;
+  /* justify-content: space-between; */
+  list-style: none;
+  gap: 7.8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav-list {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  font-size: 7rem;
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding: 8rem 0;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.job-title {
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 7.5rem;
+}
+
+.introduction {
+  line-height: 1.5;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000;
+  z-index: 10000;
+  margin-top: 1rem;
+  font-family: "Sonsie One", cursive;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: block;
+  z-index: 9999;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #000;
+}
+
+.show-hero-image .hero-image {
+  transform: translateX(0);
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.hero-image {
+  border: 2px solid #000;
+  border-radius: 50%;
+  transition: all 0.5s ease-in;
+  transform: translateX(140%);
+  opacity: 0;
+
+  visibility: hidden;
+}
+
+.section-heading {
+  color: #000;
+}
+
+.main-section-heading {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.projects {
+  padding: 8rem 0 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.project {
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  border-radius: 9px;
+  border: 1px solid #e9ecef;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+}
+
+.project-content {
+  padding: 1.5rem;
+  border-top: 1.5px solid #20b2aa;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #20b2aa;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  color: #000;
+  box-shadow: inset 0 0 0 3px #000;
+}
+
+.see-more {
+  text-align: center;
+}
+
+.project-content h2 {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: grid;
+  padding: 3rem 0 0 0;
+  grid-template-columns: 55fr 45fr;
+  column-gap: 10rem;
+  color: #ced4da;
+}
+
+.socials {
+  display: flex;
+  gap: 3rem;
+
+  margin-bottom: 5rem;
+}
+
+.social-links {
+  text-decoration: none;
+  color: #20b2aa;
+  font-weight: 900;
+}
+
+.section-footer {
+  background-color: #0f0f0f;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  align-self: flex-end;
+  margin-bottom: 5rem;
+  color: #868e96;
+
+  justify-self: end;
+}
+
+.get-in-touch-text {
+  font-size: 2rem;
+
+  color: #868e96;
+  font-weight: 700;
+  border-bottom: 1px solid #343a40;
+  padding: 3rem 0 3rem 0;
+}
+
+.get-in-touch p {
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.email-copyright {
+  display: flex;
+}
+
+strong {
+  color: #000;
+}
+
+.contact {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 12rem 0;
+}
+
+.contact-flex {
+  display: flex;
+  gap: 40rem;
+  align-items: center;
+  /* padding: 10rem 0 0 0; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+  column-gap: 8rem;
+  color: #20b2aa;
+  margin-bottom: 5rem;
+}
+
+.send-email {
+  text-align: center;
+}
+
+.contact p {
+  line-height: 1.5;
+  word-spacing: 0.3rem;
+}
+
+.about-flex {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 7rem;
+}
+
+.about-flex img {
+  width: 100%;
+  height: 45rem;
+  border-radius: 9px;
+}
+
+.about-text p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.hello-world {
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.skills {
+  padding: 6rem 0 3rem 0;
+  border-bottom: 1px solid #adb5bd;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+/* .language {
+  padding-top: 4rem;
+} */
+
+.language p {
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.language-lists {
+  list-style: none;
+}
+
+.language-list {
+  margin-bottom: 1rem;
+}
+
+.education-details {
+  display: flex;
+  gap: 30rem;
+  margin-bottom: 5rem;
+}
+
+.university-name {
+  color: #000;
+}
+
+.course {
+  color: #000;
+}
+
+.btn-footer,
+.btn-footer:link,
+.btn-footer:visited {
+  display: inline-block;
+
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #20b2aa;
+}
+
+.btn-footer:hover,
+.btn-footer:active {
+  background-color: #0f0f0f;
+  box-shadow: inset 0 0 0 3px #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.project-site,
+.project-site:link,
+.project-site:visited {
+  text-decoration: none;
+  color: #20b2aa;
+}
+
+.project-site:hover,
+.project-site:active {
+  color: #20b2aa;
+}
+
+.project-content p {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
