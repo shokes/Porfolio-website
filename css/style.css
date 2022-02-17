@@ -23,8 +23,7 @@ body {
   color: #555;
   font-weight: 400;
   font-size: 1.8rem;
-  /* overflow-x: hidden;
-    overflow-y: hidden; */
+
   font-family: "Lora", serif;
 }
 
@@ -111,8 +110,10 @@ body {
 .logo {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #20b2aa;
+  color: #000;
   z-index: 10000;
+  margin-top: 1rem;
+  font-family: "Sonsie One", cursive;
 }
 
 .btn-mobile-nav {
@@ -178,18 +179,29 @@ body {
 
 .project-content {
   padding: 1.5rem;
+  border-top: 1.5px solid #20b2aa;
 }
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   display: inline-block;
-  border: 1px solid #20b2aa;
+
   padding: 1rem 2rem;
   border-radius: 9px;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 5rem;
   cursor: pointer;
   text-decoration: none;
+  background-color: #20b2aa;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  color: #000;
+  box-shadow: inset 0 0 0 3px #000;
 }
 
 .see-more {
@@ -212,9 +224,14 @@ body {
 .socials {
   display: flex;
   gap: 3rem;
-  color: #20b2aa;
 
   margin-bottom: 5rem;
+}
+
+.social-links {
+  text-decoration: none;
+  color: #20b2aa;
+  font-weight: 900;
 }
 
 .section-footer {
@@ -303,6 +320,7 @@ strong {
   margin-bottom: 2rem;
   line-height: 1.5;
   word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .hello-world {
@@ -349,17 +367,44 @@ strong {
   color: #000;
 }
 
-.btn-footer {
+.btn-footer,
+.btn-footer:link,
+.btn-footer:visited {
   display: inline-block;
-  border: 1px solid #20b2aa;
+
   padding: 1rem 2rem;
   border-radius: 9px;
   color: #fff;
   font-weight: 600;
   margin-bottom: 5rem;
   cursor: pointer;
+  text-decoration: none;
+  background-color: #20b2aa;
+}
+
+.btn-footer:hover,
+.btn-footer:active {
+  background-color: #0f0f0f;
+  box-shadow: inset 0 0 0 3px #000;
 }
 
 .hidden {
   display: none;
+}
+
+.project-site,
+.project-site:link,
+.project-site:visited {
+  text-decoration: none;
+  color: #20b2aa;
+}
+
+.project-site:hover,
+.project-site:active {
+  color: #20b2aa;
+}
+
+.project-content p {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
