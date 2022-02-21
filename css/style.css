@@ -8,8 +8,9 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
-  /* position: fixed; */
-  background-color: #fff;
+
+  position: fixed;
+  background-color: rgb(255, 255, 255, 0.8);
   width: 100%;
 }
 
@@ -51,6 +52,7 @@ body {
   pointer-events: auto;
   visibility: visible;
   transform: translateX(0);
+  position: fixed;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -89,7 +91,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20rem;
-  padding: 8rem 0;
+  padding: 14rem 0 8rem 0;
 }
 
 .heading {
@@ -114,12 +116,15 @@ body {
   z-index: 10000;
   margin-top: 1rem;
   font-family: "Sonsie One", cursive;
+  margin-left: 12.7rem;
+  text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);
 }
 
 .btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
+  margin-right: 12rem;
 
   display: block;
   z-index: 9999;
@@ -146,6 +151,7 @@ body {
   opacity: 0;
 
   visibility: hidden;
+  z-index: -9;
 }
 
 .section-heading {
@@ -156,6 +162,7 @@ body {
   font-size: 7rem;
   font-weight: 700;
   color: #000;
+  margin-top: 10rem;
 }
 
 .projects {
