@@ -162,14 +162,16 @@ body {
   font-size: 7rem;
   font-weight: 700;
   color: #000;
-  margin-top: 10rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .projects {
-  padding: 8rem 0 5rem 0;
+  padding: 4rem 0 5rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+  transition: transform 1s, opacity 1s;
 }
 
 .project {
@@ -243,6 +245,7 @@ body {
 
 .section-footer {
   background-color: #0f0f0f;
+  transition: transform 1s, opacity 1s;
 }
 
 .copyright {
@@ -282,15 +285,15 @@ strong {
   max-width: 60rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 12rem 0;
+  gap: 3rem;
+  padding: 12rem 0 0rem 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .contact-flex {
   display: flex;
   gap: 40rem;
   align-items: center;
-  /* padding: 10rem 0 0 0; */
 }
 
 .grid {
@@ -315,6 +318,7 @@ strong {
   display: flex;
   gap: 10rem;
   margin-bottom: 7rem;
+  transition: transform 1s, opacity 1s;
 }
 
 .about-flex img {
@@ -414,4 +418,21 @@ strong {
 .project-content p {
   margin-bottom: 1rem;
   font-size: 1.6rem;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.hero-text {
+  transition: transform 1s, opacity 1s;
+}
+
+.section-projects {
+  transition: transform 1s, opacity 1s;
+}
+
+.tech-skills {
+  transition: transform 1s, opacity 1s;
 }

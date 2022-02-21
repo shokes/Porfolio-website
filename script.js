@@ -5,11 +5,16 @@ const header = document.querySelector(".header");
 const hero = document.querySelector(".hero");
 const sectionHome = document.querySelector(".section-home");
 const logo = document.querySelector(".logo");
+const heroText = document.querySelector(".hero-text");
+const allSections = document.querySelectorAll(".section");
+//const sectionHidden = document.querySelector(".section-hidden");
 
+//  menu functionality
 btnMenu.addEventListener("click", function () {
   header.classList.toggle("nav-open");
-  logo.style.color = "black";
 });
+
+// sliding image functionality in the hero section
 
 const navHeight = sectionHome.getBoundingClientRect().height;
 
@@ -29,3 +34,23 @@ const sectionHomeObserver = new IntersectionObserver(stickyNav, {
 });
 
 sectionHomeObserver.observe(sectionHome);
+
+//revealing sections
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section-hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.12,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+});
