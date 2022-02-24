@@ -17,6 +17,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -285,7 +286,7 @@ strong {
   max-width: 60rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+
   padding: 12rem 0 0rem 0;
   transition: transform 1s, opacity 1s;
 }
@@ -312,6 +313,11 @@ strong {
 .contact p {
   line-height: 1.5;
   word-spacing: 0.3rem;
+}
+
+.my-email {
+  margin-top: 5rem;
+  font-weight: 900;
 }
 
 .about-flex {
@@ -365,9 +371,10 @@ strong {
 }
 
 .education-details {
-  display: flex;
+  display: grid;
   gap: 30rem;
   margin-bottom: 5rem;
+  grid-template-columns: 30fr 70fr;
 }
 
 .university-name {
@@ -435,4 +442,8 @@ strong {
 
 .tech-skills {
   transition: transform 1s, opacity 1s;
+}
+
+.course h4 {
+  margin-bottom: 1rem;
 }

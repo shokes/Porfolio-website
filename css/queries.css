@@ -1,0 +1,35 @@
+/* BELOW 1328PX (smaller desktops) */
+
+@media (max-width: 83em) {
+  .logo {
+    margin-left: 11.7rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 11rem;
+  }
+}
+
+/* BELOW 1264PX (Landscape Tablets) */
+
+@media (max-width: 79em) {
+  .logo {
+    margin-left: 8.2rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 7.7rem;
+  }
+}
+
+/* BELOW 1184PX (Tablets) */
+
+@media (max-width: 74em) {
+  .logo {
+    margin-left: 4.4rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 3.7rem;
+  }
+}
