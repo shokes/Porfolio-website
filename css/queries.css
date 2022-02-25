@@ -2,11 +2,11 @@
 
 @media (max-width: 83em) {
   .logo {
-    margin-left: 11.7rem;
+    margin-left: 11rem;
   }
 
   .btn-mobile-nav {
-    margin-right: 11rem;
+    margin-right: 10.4rem;
   }
 }
 
@@ -25,11 +25,166 @@
 /* BELOW 1184PX (Tablets) */
 
 @media (max-width: 74em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .logo {
-    margin-left: 4.4rem;
+    margin-left: 11rem;
   }
 
   .btn-mobile-nav {
-    margin-right: 3.7rem;
+    margin-right: 10.3rem;
+  }
+}
+
+/*  BELOW 1000pX */
+
+@media (max-width: 63em) {
+  .container {
+    max-width: 105rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 3rem;
+  }
+  .logo {
+    margin-left: 4rem;
+  }
+}
+
+/*  BELOW 960pX */
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    display: grid;
+
+    gap: 7rem;
+    padding: 14rem 0 8rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-image {
+    border: none;
+    transition: all 0.5s ease-in;
+    transform: translateX(140%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -9;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .about-flex {
+    display: grid;
+    gap: 10rem;
+
+    grid-template-columns: 1fr;
+  }
+
+  .about-flex img {
+    width: 70%;
+    height: 80rem;
+  }
+
+  .education-details {
+    grid-template-columns: 42fr 58fr;
+  }
+
+  .contact-flex {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: self-start;
+  }
+
+  .logo {
+    margin-left: 7.8rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 7.1rem;
+  }
+
+  .project img {
+    height: 70rem;
+  }
+}
+
+/*  BELOW 880pX */
+
+@media (max-width: 55em) {
+  .container {
+    max-width: 90rem;
+  }
+  .logo {
+    margin-left: 4.8rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 4.8rem;
+  }
+}
+
+/* BELOW 656px (Phones) */
+
+@media (max-width: 41em) {
+  .container {
+    max-width: 43rem;
+  }
+  .btn-mobile-nav {
+    margin-right: 9.5rem;
+  }
+
+  .logo {
+    margin-left: 5.8rem;
+  }
+
+  .about-flex img {
+    width: 100%;
+    height: 62rem;
+  }
+
+  .education-details {
+    gap: 1rem;
+
+    grid-template-columns: 1fr;
+  }
+
+  .socials {
+    display: block;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  .social-links {
+    margin-right: 1rem;
+  }
+  .project img {
+    height: 40rem;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .copyright {
+    margin-bottom: 2rem;
+
+    justify-self: baseline;
+  }
+
+  .school-name {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 1fr;
   }
 }

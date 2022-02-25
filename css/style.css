@@ -17,7 +17,6 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body {
@@ -374,6 +373,13 @@ strong {
   display: grid;
   gap: 30rem;
   margin-bottom: 5rem;
+  grid-template-columns: 30fr 70fr;
+}
+
+.school-name {
+  display: grid;
+  gap: 30rem;
+  /* margin-bottom: 5rem; */
   grid-template-columns: 30fr 70fr;
 }
 
