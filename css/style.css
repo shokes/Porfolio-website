@@ -68,12 +68,13 @@ body {
 }
 
 .main-nav-lists {
-  display: flex;
-  /* justify-content: space-between; */
+  display: grid;
+
   list-style: none;
   gap: 7.8rem;
-  flex-direction: column;
+
   align-items: center;
+  justify-items: center;
 }
 
 .main-nav-list {
