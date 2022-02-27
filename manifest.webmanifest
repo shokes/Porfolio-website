@@ -1,0 +1,15 @@
+{
+    "icons": [
+      {
+        "src": "images/shokes-192.jpeg",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/shokes-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
