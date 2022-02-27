@@ -454,3 +454,7 @@ strong {
 .course h4 {
   margin-bottom: 1rem;
 }
+.course p {
+  word-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
+}

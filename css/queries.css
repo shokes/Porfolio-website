@@ -139,14 +139,14 @@
 
 @media (max-width: 41em) {
   .container {
-    max-width: 36rem;
+    max-width: 40rem;
   }
   .btn-mobile-nav {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 
   .logo {
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
 
   .about-flex img {
@@ -199,7 +199,7 @@
     grid-template-columns: 1fr;
   }
   .contact-flex {
-    gap: 3rem;
+    gap: 7rem;
   }
   .grid {
     row-gap: 2rem;
