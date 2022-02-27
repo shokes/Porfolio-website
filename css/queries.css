@@ -22,20 +22,24 @@
   } */
 }
 
-/* BELOW 1184PX (Tablets) */
+/* BELOW 1088PX (Tablets) */
 
-@media (max-width: 74em) {
+@media (max-width: 68em) {
   html {
     font-size: 56.25%;
   }
 
-  /* .logo {
-    margin-left: 9.7rem;
+  .logo {
+    margin-left: 1rem;
   }
 
   .btn-mobile-nav {
-    margin-right: 9.7rem;
-  } */
+    margin-right: 1rem;
+  }
+
+  .header {
+    padding: 1rem 0rem;
+  }
 }
 
 /*  BELOW 1000pX */
@@ -133,6 +137,18 @@
   .btn-mobile-nav {
     margin-right: 4.8rem;
   } */
+}
+
+/* below 704px */
+
+@media (max-width: 44em) {
+  .logo {
+    margin-left: 3rem;
+  }
+
+  .btn-mobile-nav {
+    margin-right: 3rem;
+  }
 }
 
 /* BELOW 656px (Phones) */
