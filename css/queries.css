@@ -10,16 +10,23 @@
   } */
 }
 
-/* BELOW 1264PX (Landscape Tablets) */
+/* BELOW 1624X (Landscape Tablets) */
 
-@media (max-width: 79em) {
-  /* .logo {
-    margin-left: 8.2rem;
+@media (max-width: 73em) {
+  .container {
+    max-width: 105rem;
+  }
+
+  .header {
+    padding: 1rem 0rem;
+  }
+  .logo {
+    margin-left: 1rem;
   }
 
   .btn-mobile-nav {
-    margin-right: 8.2rem;
-  } */
+    margin-right: 1rem;
+  }
 }
 
 /* BELOW 1088PX (Tablets) */
