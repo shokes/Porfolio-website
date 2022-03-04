@@ -458,3 +458,20 @@ strong {
   word-spacing: 0.1rem;
   letter-spacing: 0.2rem;
 }
+
+.project-code,
+.project-code:link,
+.project-code:visited {
+  text-decoration: none;
+  color: #20b2aa;
+}
+
+.project-code:hover,
+.project-code:active {
+  color: #20b2aa;
+}
+
+.external-links {
+  display: grid;
+  gap: 1rem;
+}
