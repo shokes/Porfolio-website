@@ -32,14 +32,18 @@ body {
   display: flex;
   position: absolute;
   top: 0%;
-  left: 0%;
-  height: 100vh;
-  width: 100%;
+  /* left: 0%; */
+  left: 82%;
+  /* height: 100vh; */
+  height: 39vh;
+  width: 15%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   transform: translatex(100%);
   transition: all 0.5s ease-in;
-  background-color: #20b2aa;
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
   opacity: 0;
 
   pointer-events: none;
@@ -53,6 +57,7 @@ body {
   visibility: visible;
   transform: translateX(0);
   position: fixed;
+  border-radius: 9px;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -71,17 +76,27 @@ body {
   display: grid;
 
   list-style: none;
-  gap: 7.8rem;
+  /* gap: 7.8rem; */
+  gap: 2.8rem;
 
   align-items: center;
   justify-items: center;
+  margin-top: 3.5rem;
 }
 
 .main-nav-list {
   text-decoration: none;
   color: #000;
-  font-weight: 800;
-  font-size: 7rem;
+  font-weight: 500;
+  /* font-size: 7rem; */
+  font-size: 2.4rem;
+  transition: all 0.2s linear;
+}
+
+.main-nav-list:hover {
+  color: #20b2aa;
+
+  padding-left: 1.5rem;
 }
 .container {
   max-width: 110rem;
@@ -117,7 +132,6 @@ body {
   z-index: 10000;
   margin-top: 1rem;
   font-family: "Sonsie One", cursive;
-  /* margin-left: 11.4rem; */
   text-shadow: 4px 1px 0px rgb(0 0 0 / 10%);
 }
 
@@ -125,7 +139,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-  /* margin-right: 11.4rem; */
+
   transition: all 0.3s linear;
   display: block;
   z-index: 9999;

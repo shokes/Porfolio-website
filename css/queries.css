@@ -17,6 +17,14 @@
     max-width: 105rem;
   }
 
+  .btn-mobile-nav:hover {
+    transform: none;
+  }
+
+  .nav {
+    left: 84%;
+  }
+
   .header {
     padding: 1rem 0rem;
   }
@@ -47,6 +55,10 @@
   .header {
     padding: 1rem 0rem;
   }
+
+  .nav {
+    height: 33vh;
+  }
 }
 
 /*  BELOW 1000pX */
@@ -69,6 +81,11 @@
 
   .container {
     max-width: 80rem;
+  }
+
+  .nav {
+    left: 81%;
+    height: 29vh;
   }
 
   .hero {
@@ -168,6 +185,12 @@
     margin-right: 3rem;
   }
 
+  .nav {
+    height: 31vh;
+    width: 30%;
+    left: 68%;
+  }
+
   .logo {
     margin-left: 3rem;
   }
@@ -235,5 +258,9 @@
 
   .hero-image {
     margin-left: -6rem;
+  }
+
+  .main-nav-lists {
+    margin-top: 6.5rem;
   }
 }
