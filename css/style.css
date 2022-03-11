@@ -126,9 +126,13 @@ body {
   background: none;
   cursor: pointer;
   /* margin-right: 11.4rem; */
-
+  transition: all 0.3s linear;
   display: block;
   z-index: 9999;
+}
+
+.btn-mobile-nav:hover {
+  transform: rotate(90deg);
 }
 
 .icon-mobile-nav {
