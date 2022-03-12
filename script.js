@@ -9,8 +9,6 @@ const heroText = document.querySelector(".hero-text");
 const allSections = document.querySelectorAll(".section");
 const btnOpen = document.querySelector(".btn-menu-open");
 
-//const sectionHidden = document.querySelector(".section-hidden");
-
 //  menu functionality
 btnMenu.addEventListener("click", function () {
   header.classList.toggle("nav-open");
