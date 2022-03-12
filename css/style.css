@@ -146,7 +146,7 @@ body {
 }
 
 .btn-mobile-nav:hover {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .icon-mobile-nav {

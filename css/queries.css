@@ -17,9 +17,9 @@
     max-width: 105rem;
   }
 
-  .btn-mobile-nav:hover {
+  /* .btn-mobile-nav:hover {
     transform: none;
-  }
+  } */
 
   .nav {
     left: 84%;
@@ -264,3 +264,20 @@
     margin-top: 6.5rem;
   }
 }
+
+/* setting media queries for the height of devices in potrait mode */
+
+@media (max-height: 38em) {
+  .nav {
+    height: 52vh;
+  }
+
+  .main-nav-lists {
+    margin-top: 4.5rem;
+  }
+}
+
+/* @media (max-width: 41em) {
+  .container {
+    max-width: 40rem;
+  } */
