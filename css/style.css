@@ -88,7 +88,7 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  /* font-size: 7rem; */
+
   font-size: 2.1rem;
   transition: all 0.2s linear;
 }
@@ -131,8 +131,9 @@ body {
   color: #000;
   z-index: 10000;
   margin-top: 1rem;
-  font-family: "Sonsie One", cursive;
+  font-family: "Fredoka", sans-serif;
   text-shadow: 4px 1px 0px rgb(0 0 0 / 10%);
+  text-transform: capitalize;
 }
 
 .btn-mobile-nav {
