@@ -41,7 +41,7 @@ body {
 
   justify-content: center;
   align-items: center;
-  transform: translatex(100%);
+  transform: translatex(140%);
   transition: all 0.5s ease-in;
   background-color: #fff;
   box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
@@ -49,7 +49,7 @@ body {
 
   pointer-events: none;
   visibility: hidden;
-  /* z-index: 9999; */
+
   z-index: 100;
 }
 
@@ -89,7 +89,7 @@ body {
 .main-nav-list {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
 
   font-size: 2.1rem;
   transition: all 0.2s linear;
@@ -160,7 +160,7 @@ body {
 }
 
 .show-hero-image .hero-image {
-  transform: translateX(0);
+  transform: translateX(0) !important;
   opacity: 1;
 
   visibility: visible;
