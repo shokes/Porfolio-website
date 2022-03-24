@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="This is the portfolio website of the Frontend Developer, Oshoke Oyati."/>
+    <meta
+      name="description"
+      content="This is the portfolio website of the Frontend Developer, Oshoke Oyati."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="images/shokes.png" />
 
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
-    <link rel="icon" href="images/shokes.png"/>
-
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
-
-    <link rel="manifest" href="manifest.webmanifest"/>
-
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <title>Shokes — Frontend Developer</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -34,58 +34,79 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="script.js"></script>
   </head>
   <body>
     <section class="section-home">
       <header class="header">
-        <div class="logo">shokes</div>
+        <a class="logo" href="index.html">shokes</a>
 
         <nav class="nav">
           <ul class="main-nav-lists">
-           <li> <a class="main-nav-list" href="index.html">Home</a></li>
             <li><a class="main-nav-list" href="projects.html">Work</a></li>
             <li><a class="main-nav-list" href="about.html">About</a></li>
             <li><a class="main-nav-list" href="contact.html">Contact</a></li>
           </ul>
-         
         </nav>
 
-        <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </header>
-
     </section>
 
-    <section class="section-contact  container">
+    <section class="section-contact container">
       <div class="contact section section-hidden">
         <h2 class="main-section-heading">Contact</h2>
         <p>
           You can reach out to me via Email. I’m not really active on Linkedin
           but you can follow me on Twitter. I post links to really good trap
-          music on my twitter but if you want something serious you can check
-          my GitHub.
+          music on my twitter but if you want something serious you can check my
+          GitHub.
         </p>
         <p class="my-email">oyatioshoke@yahoo.com</p>
       </div>
-     
+
       <div class="contact-flex">
         <div class="send-email">
-
           <a class="btn">Send an email &rarr;</a>
         </div>
 
         <div class="grid">
-
-            <a class="social-links" href="mailto:oyatioshoke@yahoo.com" target="_blank">Email</a>
-            <a class="social-links" href="https://www.linkedin.com/in/oshoke-oyati?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7bIwlnH1TeKUJ6r3jWAS6g%3D%3D" target="_blank" >LinkedIn</a>
-            <a class="social-links" href="https://github.com/shokes" target="_blank">GitHub</a>
-            <a class="social-links" href="https://twitter.com/Airshokes" target="_blank">Twitter</a>
+          <a
+            class="social-links"
+            href="mailto:oyatioshoke@yahoo.com"
+            target="_blank"
+            >Email</a
+          >
+          <a
+            class="social-links"
+            href="https://www.linkedin.com/in/oshoke-oyati?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7bIwlnH1TeKUJ6r3jWAS6g%3D%3D"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="social-links"
+            href="https://github.com/shokes"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            class="social-links"
+            href="https://twitter.com/Airshokes"
+            target="_blank"
+            >Twitter</a
+          >
         </div>
       </div>
     </section>
+     <div class="overlay hidden"></div>
   </body>
 </html>

@@ -12,6 +12,7 @@
   position: fixed;
   background-color: rgb(255, 255, 255, 0.8);
   width: 100%;
+  z-index: 999;
 }
 
 html {
@@ -25,19 +26,19 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
 
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .nav {
   display: flex;
   position: absolute;
   top: 0%;
-  /* left: 0%; */
-  left: 82%;
-  /* height: 100vh; */
-  height: 39vh;
-  width: 15%;
-  /* width: 100%; */
+
+  left: 84.5%;
+
+  height: 32vh;
+  width: 12%;
+
   justify-content: center;
   align-items: center;
   transform: translatex(100%);
@@ -48,7 +49,8 @@ body {
 
   pointer-events: none;
   visibility: hidden;
-  z-index: 9999;
+  /* z-index: 9999; */
+  z-index: 100;
 }
 
 .nav-open .nav {
@@ -60,15 +62,15 @@ body {
   border-radius: 9px;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
-.nav-open .icon-mobile-nav[name="close-outline"] {
+.nav-open .icon-mobile-nav[name='close-outline'] {
   display: block;
 }
 
-.nav-open .icon-mobile-nav[name="menu-outline"] {
+.nav-open .icon-mobile-nav[name='menu-outline'] {
   display: none;
 }
 
@@ -76,7 +78,7 @@ body {
   display: grid;
 
   list-style: none;
-  /* gap: 7.8rem; */
+
   gap: 2.8rem;
 
   align-items: center;
@@ -131,9 +133,10 @@ body {
   color: #000;
   z-index: 10000;
   margin-top: 1rem;
-  font-family: "Fredoka", sans-serif;
+  font-family: 'Fredoka', sans-serif;
   text-shadow: 4px 1px 0px rgb(0 0 0 / 10%);
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 .btn-mobile-nav {
@@ -371,10 +374,6 @@ strong {
   text-transform: uppercase;
 }
 
-/* .language {
-  padding-top: 4rem;
-} */
-
 .language p {
   color: #000;
   margin-bottom: 1.5rem;
@@ -399,7 +398,7 @@ strong {
 .school-name {
   display: grid;
   gap: 30rem;
-  /* margin-bottom: 5rem; */
+
   grid-template-columns: 30fr 70fr;
 }
 
@@ -493,4 +492,25 @@ strong {
 .external-links {
   display: grid;
   gap: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay {
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.nav-background {
+  background-color: transparent;
 }

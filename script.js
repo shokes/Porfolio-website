@@ -1,19 +1,29 @@
-"use-strict";
+'use-strict';
 
-const btnMenu = document.querySelector(".btn-mobile-nav");
-const header = document.querySelector(".header");
-const hero = document.querySelector(".hero");
-const sectionHome = document.querySelector(".section-home");
-const logo = document.querySelector(".logo");
-const heroText = document.querySelector(".hero-text");
-const allSections = document.querySelectorAll(".section");
-const btnOpen = document.querySelector(".btn-menu-open");
+const btnMenu = document.querySelector('.btn-mobile-nav');
+const header = document.querySelector('.header');
+const hero = document.querySelector('.hero');
+const sectionHome = document.querySelector('.section-home');
+const logo = document.querySelector('.logo');
+const heroText = document.querySelector('.hero-text');
+const allSections = document.querySelectorAll('.section');
+const btnOpen = document.querySelector('.btn-menu-open');
+const overlay = document.querySelector('.overlay');
 
 //  menu functionality
-btnMenu.addEventListener("click", function () {
-  header.classList.toggle("nav-open");
+btnMenu.addEventListener('click', function () {
+  header.classList.toggle('nav-open');
+  overlay.classList.toggle('hidden');
+  header.classList.toggle('nav-background');
 });
 
+// overlay functionality
+
+overlay.addEventListener('click', function () {
+  overlay.classList.add('hidden');
+  header.classList.remove('nav-background');
+  header.classList.remove('nav-open');
+});
 // sliding image functionality in the hero section
 
 const navHeight = sectionHome.getBoundingClientRect().height;
@@ -23,7 +33,7 @@ const stickyNav = function (entries) {
   // console.log(entry);
 
   if (!entry.isIntersecting) {
-    hero.classList.add("show-hero-image");
+    hero.classList.add('show-hero-image');
   }
 };
 
@@ -41,7 +51,7 @@ const revealSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
 
-  entry.target.classList.remove("section-hidden");
+  entry.target.classList.remove('section-hidden');
   observer.unobserve(entry.target);
 };
 
@@ -52,5 +62,5 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
-  section.classList.add("section-hidden");
+  section.classList.add('section-hidden');
 });
