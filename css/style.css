@@ -167,7 +167,7 @@ body {
 }
 
 .hero-image {
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   border-radius: 50%;
   transition: all 0.5s ease-in;
   transform: translateX(140%);
