@@ -89,7 +89,7 @@ body {
 .main-nav-list {
   text-decoration: none;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
 
   font-size: 2.1rem;
   transition: all 0.2s linear;
@@ -169,7 +169,7 @@ body {
 .hero-image {
   /* border: 2px solid #000; */
   border-radius: 50%;
-  transition: all 0.8s ease-in;
+  transition: all 1.4s;
   transform: translateX(140%);
   opacity: 0;
 
