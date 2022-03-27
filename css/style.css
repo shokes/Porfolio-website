@@ -160,7 +160,7 @@ body {
 }
 
 .show-hero-image .hero-image {
-  transform: translateX(0) !important;
+  transform: translateX(0);
   opacity: 1;
 
   visibility: visible;
@@ -513,4 +513,8 @@ strong {
 
 .nav-background {
   background-color: transparent;
+}
+
+.hero-image img {
+  border-radius: 50%;
 }
