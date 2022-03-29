@@ -30,10 +30,10 @@ const navHeight = sectionHome.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
 
   if (!entry.isIntersecting) {
-    hero.classList.add('show-hero-image');
+    hero.classList.toggle('show-hero-image');
   }
 };
 
