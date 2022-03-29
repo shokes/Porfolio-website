@@ -33,7 +33,7 @@ const stickyNav = function (entries) {
   // console.log(entry);
 
   if (!entry.isIntersecting) {
-    hero.classList.toggle('show-hero-image');
+    hero.classList.add('show-hero-image');
   }
 };
 
