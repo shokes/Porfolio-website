@@ -135,8 +135,14 @@ body {
   margin-top: 1rem;
   font-family: 'Fredoka', sans-serif;
   text-shadow: 4px 1px 0px rgb(0 0 0 / 10%);
-  text-transform: capitalize;
+  letter-spacing: 7px;
   text-decoration: none;
+}
+
+.logo::after {
+  content: '.';
+  color: #f03e3e;
+  margin-left: -1rem;
 }
 
 .btn-mobile-nav {
