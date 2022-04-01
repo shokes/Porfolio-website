@@ -141,7 +141,7 @@ body {
 
 .logo::after {
   content: '.';
-  color: #f03e3e;
+  color: #f59f00;
   margin-left: -1.3rem;
 }
 
