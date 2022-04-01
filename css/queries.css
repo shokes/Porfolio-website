@@ -191,6 +191,10 @@
     margin-right: 3rem;
   }
 
+  .hero {
+    gap: 3rem;
+  }
+
   .nav {
     height: 23.4vh;
     width: 30%;
