@@ -142,7 +142,7 @@ body {
 .logo::after {
   content: '.';
   color: #f03e3e;
-  margin-left: -1rem;
+  margin-left: -1.3rem;
 }
 
 .btn-mobile-nav {
