@@ -213,6 +213,8 @@ body {
   display: block;
   width: 100%;
   height: 30rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .project-content {
