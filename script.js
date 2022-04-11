@@ -2,6 +2,7 @@
 
 const btnMenu = document.querySelector('.btn-mobile-nav');
 const header = document.querySelector('.header');
+
 const hero = document.querySelector('.hero');
 const sectionHome = document.querySelector('.section-home');
 const logo = document.querySelector('.logo');
@@ -13,6 +14,7 @@ const overlay = document.querySelector('.overlay');
 //  menu functionality
 btnMenu.addEventListener('click', function () {
   header.classList.toggle('nav-open');
+
   overlay.classList.toggle('hidden');
   header.classList.toggle('nav-background');
 });
@@ -27,6 +29,7 @@ overlay.addEventListener('click', function () {
 // sliding image functionality in the hero section
 
 const navHeight = sectionHome.getBoundingClientRect().height;
+//console.log(navHeight);
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -40,7 +43,8 @@ const stickyNav = function (entries) {
 const sectionHomeObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  //rootMargin: `-${navHeight}px`,
+  rootMargin: '-750px',
 });
 
 sectionHomeObserver.observe(sectionHome);
@@ -49,6 +53,7 @@ sectionHomeObserver.observe(sectionHome);
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
+  // console.log(entry);
   if (!entry.isIntersecting) return;
 
   entry.target.classList.remove('section-hidden');
@@ -57,7 +62,9 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.12,
+  //  threshold: 0.08,
+  threshold: 0,
+  rootMargin: '-10px',
 });
 
 allSections.forEach(function (section) {

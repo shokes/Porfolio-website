@@ -7,8 +7,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5rem;
-
+  padding: 2rem 5rem;
+  align-items: center;
   position: fixed;
   background-color: rgb(255, 255, 255, 0.8);
   width: 100%;
@@ -29,53 +29,8 @@ body {
   font-family: 'Lora', serif;
 }
 
-.nav {
-  display: flex;
-  position: absolute;
-  top: 0%;
-
-  left: 84.5%;
-
-  height: 32vh;
-  width: 12%;
-
-  justify-content: center;
-  align-items: center;
-  transform: translatey(-100%);
-  transition: all 0.5s ease-in;
-  background-color: #fff;
-  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
-  opacity: 0;
-
-  pointer-events: none;
-  visibility: hidden;
-
-  z-index: 100;
-}
-
-.nav-open .nav {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  transform: translateX(0);
-  position: fixed;
-  border-radius: 9px;
-}
-
-.icon-mobile-nav[name='close-outline'] {
-  display: none;
-}
-
-.nav-open .icon-mobile-nav[name='close-outline'] {
-  display: block;
-}
-
-.nav-open .icon-mobile-nav[name='menu-outline'] {
-  display: none;
-}
-
 .main-nav-lists {
-  display: grid;
+  display: flex;
 
   list-style: none;
 
@@ -83,22 +38,24 @@ body {
 
   align-items: center;
   justify-items: center;
-  margin-top: 3.5rem;
 }
 
 .main-nav-list {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 400;
 
-  font-size: 2.1rem;
-  transition: all 0.2s linear;
+  font-size: 1.7rem;
+  transition: all 0.1s linear;
+}
+
+.nav-color {
+  color: #20b2aa;
+  font-weight: 900;
 }
 
 .main-nav-list:hover {
   color: #20b2aa;
-
-  padding-left: 1.5rem;
 }
 .container {
   max-width: 110rem;
@@ -132,7 +89,7 @@ body {
   font-weight: 700;
   color: #000;
   z-index: 10000;
-  margin-top: 1rem;
+
   font-family: 'Fredoka', sans-serif;
   text-shadow: 4px 1px 0px rgb(0 0 0 / 10%);
   letter-spacing: 7px;
@@ -151,7 +108,8 @@ body {
   cursor: pointer;
 
   transition: all 0.3s linear;
-  display: block;
+
+  display: none;
   z-index: 9999;
 }
 
@@ -173,7 +131,6 @@ body {
 }
 
 .hero-image {
-  /* border: 2px solid #000; */
   border-radius: 50%;
   transition: all 1.4s;
   transform: translateX(140%);

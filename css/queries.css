@@ -32,7 +32,7 @@
     margin-left: 1rem;
   }
 
-  .btn-mobile-nav {
+  .main-nav-lists {
     margin-right: 1rem;
   }
 }
@@ -56,9 +56,9 @@
     padding: 1rem 0rem;
   }
 
-  .nav {
+  /* .nav {
     height: 33vh;
-  }
+  } */
 }
 
 /*  BELOW 1000pX */
@@ -85,7 +85,7 @@
 
   .nav {
     left: 83.5%;
-    height: 29vh;
+    /* height: 29vh; */
   }
 
   .hero {
@@ -139,7 +139,7 @@
     margin-left: 6rem;
   }
 
-  .btn-mobile-nav {
+  .main-nav-lists {
     margin-right: 6rem;
   }
 
@@ -155,10 +155,10 @@
     max-width: 75rem;
   }
 
-  .nav {
+  /* .nav {
     left: 82%;
     width: 14%;
-  }
+  } */
 
   /* .logo {
     margin-left: 4.8rem;
@@ -178,6 +178,53 @@
 
   .btn-mobile-nav {
     margin-right: 3rem;
+    display: block;
+  }
+  .main-nav-lists {
+    display: grid;
+    margin-right: 0rem;
+  }
+  .nav {
+    display: flex;
+    position: absolute;
+    top: 0%;
+
+    left: 84.5%;
+    height: 30vh;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-100%);
+    transition: all 0.5s ease-in;
+    background-color: #fff;
+    box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+    opacity: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+
+    z-index: 100;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    position: fixed;
+    border-radius: 9px;
+  }
+
+  .icon-mobile-nav[name='close-outline'] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
   }
 }
 
@@ -278,12 +325,20 @@
 /* setting media queries for the height of devices in potrait mode */
 
 @media (min-height: 55em) {
-  .nav {
+  /* .nav {
     height: 21vh;
+  } */
+}
+
+/* //  for wide screens */
+
+@media (min-width: 94em) {
+  .container {
+    max-width: 150rem;
   }
 }
 
-@media (max-height: 38em) {
+/* @media (max-height: 38em) {
   .nav {
     height: 52vh;
   }
@@ -291,7 +346,7 @@
   .main-nav-lists {
     margin-top: 4.5rem;
   }
-}
+} */
 
 /* @media (max-width: 41em) {
   .container {
