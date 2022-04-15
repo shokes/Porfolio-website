@@ -183,6 +183,7 @@
   .main-nav-lists {
     display: grid;
     margin-right: 0rem;
+    grid-template-columns: repeat(1, 1fr);
   }
   .nav {
     display: flex;
