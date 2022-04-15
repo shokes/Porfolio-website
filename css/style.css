@@ -29,7 +29,7 @@ body {
   font-family: 'Lora', serif;
 }
 
-.main-nav-lists {
+/* .main-nav-lists {
   display: flex;
 
   list-style: none;
@@ -38,6 +38,16 @@ body {
 
   align-items: center;
   justify-items: center;
+} */
+
+.main-nav-lists {
+  display: grid;
+  list-style: none;
+  gap: 2.8rem;
+  align-items: center;
+  justify-items: center;
+
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main-nav-list {
